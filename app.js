@@ -29,7 +29,7 @@ function gotResult(err,res){
 function draw(){
     image(video,0,0);
     fill(255);
-    background(1);
+    background(0);
     textSize(14);
     text(name,10,height -20);
 }
