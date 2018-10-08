@@ -5,7 +5,6 @@ let name='';
 function setup(){
     createCanvas(400,300);
     video = createCapture(VIDEO);
-    video.hide();
     background(1);
     mobilenet = ml5.imageClassifier('MobileNet',video,modelReady);
 }
@@ -29,7 +28,7 @@ function gotResult(err,res){
 function draw(){
     image(video,0,0);
     fill(255);
-    background(0);
+    background(1);
     textSize(14);
     text(name,10,height -20);
 }
