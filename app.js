@@ -5,6 +5,7 @@ let name='';
 function setup(){
     createCanvas(400,300);
     video = createCapture(VIDEO);
+    video.hide();
     background(1);
     mobilenet = ml5.imageClassifier('MobileNet',video,modelReady);
 }
