@@ -6,7 +6,7 @@ let prob='';
 function setup(){
 
     video = createCapture(VIDEO);
-    createCanvas(400,300);
+    createCanvas(450,100);
     background(0);
     mobilenet = ml5.imageClassifier('MobileNet',video,modelReady);
 }
@@ -32,6 +32,6 @@ function draw(){
     fill(255);
     background(0);
     textSize(24);
-    text(name,10,height -50);
-    text(prob,10,height -100);
+    text(name,10,height -100);
+    text(prob,10,height -50);
 }
