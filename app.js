@@ -15,6 +15,7 @@ function modelReady(){
     mobilenet.predict(gotResult);
 }
 
+
 function gotResult(err,res){
     if(err){
         console.error(err);
