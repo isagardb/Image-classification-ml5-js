@@ -6,7 +6,7 @@ let prob='';
 function setup(){
 
     video = createCapture(VIDEO);
-    createCanvas(450,100);
+    createCanvas(450,200);
     background(0);
     mobilenet = ml5.imageClassifier('MobileNet',video,modelReady);
 }
